@@ -1,0 +1,86 @@
+<!-- ## 📚 User Stories
+1. As a user, I see a Header component with the name of your cohort.
+2. As a user, I can see a Content component that contains an unordered list of all your classmates.
+3. As a user, I can see a Footer component with your name. 
+-->
+
+<!-- // v-----DON'T TOUCH-----v (We're in HTML)-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+// ^-----DON'T TOUCH-----^ (We're in Javascript)
+
+
+      const App = () => {
+        return (
+        // JSX fragments allows us to write HTML in Javascript, and allows us multiple elements (elements are what appears in the DOM)
+        <>
+{/* We're in JSX land */}
+
+{/* 1. Header Component with Cohort's Name */}
+        <h1> Echo 2022 </h1>
+
+{/* 2. Unordered bullets of all Cohort's members; skipping a line with paragraph tag <p>; using <ul> to create unordered numbering, using <li> to list all the items--in this case it would be our Cohorts*/}
+
+        <p>
+            <ul>
+                    <li> Tuan </li>
+                    <li> Brook </li>
+                    <li>Jason </li>
+                    <li> Francisco </li>
+                    <li> Joseph </li>
+                    <li> Luis </li>
+                    <li> Namier </li>
+                    <li> Dawit </li>
+                    <li> Hieu </li>
+                    <li> Cathrine </li>
+                    <li> Clifford </li>
+                    <li> Jereme </li>
+                    <li> Vanessa </li>
+                    <li> Kelly </li>
+                    <li> Joyce </li>
+                    <li> Elijah </li>
+                    <li> Daniel </li>
+                    <li> Holden </li>
+                    <li> Cody </li>
+                    <li> Rashad </li>
+                    <li> Samuel </li>
+                    <li> Charlean </li>
+                    <li> Austin </li>
+            </ul>
+        </p>
+
+{/* 3. Create a Footer with your name; use the footer tag <footer>*/}
+        <footer> Jereme </footer>
+        </>
+               )
+      }
+
+
+
+{/* v-----DONT TOUCH-----v */}
+
+      const domContainer = document.querySelector('#react-container')
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
+
+<!-- ^-----DONT TOUCH-----^  -->
